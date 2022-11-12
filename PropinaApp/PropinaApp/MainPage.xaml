@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PropinaApp.MainPage" BackgroundColor="#323232" >
+
+   <ContentPage.Resources>
+
+       <Color x:Key="sectionColor">#444444</Color>
+       <Color x:Key="lightFont">#444444</Color>
+       <Color x:Key="darkFont">#444444</Color>
+
+   </ContentPage.Resources>
+
+    <Grid Margin="15" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".3*" />
+            <RowDefinition Height=".7*" />
+        </Grid.RowDefinitions>
+
+        <!--primer parte-->
+        <Frame Padding="10" BackgroundColor="{StaticResource sectionColor}" BorderColor="Transparent">
+
+       <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1" />
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto" />
+
+                </Grid.ColumnDefinitions>
+                
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height=".1*" />
+                    <RowDefinition Height=".9*" />
+
+                </Grid.RowDefinitions>
+
+                    <Label Grid.ColumnSpan="2" FontAttributes="Bold" HorizontalTextAlignment="Center"
+                       Text="Total P/Personas" TextColor="{StaticResource darkFont}" />
+
+
+                <Label x:Name="lblTotal" Grid.Row="1"
+                       FontAttributes="Bold"
+                       FontSize="35"
+                       HorizontalTextAlignment="Center"
+                       Text="$0.00"
+                       TextColor="{StaticResource lightFont}"
+                       VerticalOptions="CenterAndExpand" />
+
+
+            </Grid>
+
+        </Frame>
+
+    </Grid>
+
+</ContentPage>
+

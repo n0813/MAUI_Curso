@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppFrases.MainPage">
+
+  <Grid x:Name="fondo">
+
+      <Grid.Background>
+          <LinearGradientBrush  EndPoint="1,1">
+              <GradientStopCollection>
+                  <GradientStop Offset="0" Color="#051937"/>
+                  <GradientStop Offset="0.25" Color="#004d7a"/>
+                  <GradientStop Offset="0.50" Color="#008793"/>
+                  <GradientStop Offset="0.75" Color="#00bf72"/>
+                  <GradientStop Offset="1" Color="#a8eb12"/>
+                  
+
+              </GradientStopCollection>
+
+          </LinearGradientBrush>
+
+      </Grid.Background>
+
+      <Grid Margin="25"  >
+
+          <Grid.RowDefinitions>
+              <RowDefinition Height=".8*" />
+              <RowDefinition Height=".2*" />
+
+          </Grid.RowDefinitions>
+
+          <Label
+              x:Name="lblFrase"
+              FontSize="50"
+              HorizontalTextAlignment="Center"
+              Text="Vide toda tu vida como si fuera el ultimo"
+              TextColor="White"
+              VerticalOptions="Center"/>
+
+          <Button
+              Grid.Row="1"
+              BackgroundColor="Black"
+              Opacity=".4"
+              x:Name="btnGenerarColor"
+              Clicked="btnGenerarColor_Clicked"
+              Text="Obtener frase"/>
+
+      </Grid>
+
+
+  </Grid>
+
+</ContentPage>
+
