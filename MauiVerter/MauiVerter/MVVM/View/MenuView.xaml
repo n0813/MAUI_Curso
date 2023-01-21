@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiVerter.MVVM.View.MenuView"
+             Title="MenuView"
+             NavigationPage.HasNavigationBar="false"
+             
+             >
+
+
+    <ContentPage.Resources>
+        <Color x:Key="AppColor1"> #10002B</Color>
+        <Color x:Key="AppColor2"> #240046</Color>
+        <Color x:Key="AppColor3"> #3c096c</Color>
+        <Color x:Key="AppColor4"> #5a189a</Color>
+        <Color x:Key="TextColor"> white</Color>
+
+
+    </ContentPage.Resources>
+
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width=".33*" />
+            <ColumnDefinition Width=".33*" />
+            <ColumnDefinition Width=".33*" />
+
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".1*"/>
+            <RowDefinition Height=".3*"/>
+            <RowDefinition Height=".3*"/>
+            <RowDefinition Height=".3*"/>
+
+        </Grid.RowDefinitions>
+
+
+
+
+        <Label Grid.ColumnSpan="3" 
+               BackgroundColor="{StaticResource AppColor4} "
+               FontAttributes="Bold"
+               FontSize="Large"
+               HorizontalTextAlignment="Center"
+               Text=" - MAUIVERTER -"
+               TextColor="{StaticResource TextColor}"
+               VerticalTextAlignment="Center"
+               />
+
+
+        <!--#region Informacion-->
+           <Grid Grid.Row="1" Padding="15"
+                 Background="{StaticResource AppColor1}"                 
+                 >
+
+                    <Grid.RowDefinitions>
+            <RowDefinition Height=".7*"/>
+            <RowDefinition Height=".3*"/>
+
+        </Grid.RowDefinitions>
+
+            <Image >
+                <Image.Source>
+                    <FontImageSource FontFamily="Icons"
+                                     Glyph="&#xF0A0;"
+                                     Size="50"/>
+                </Image.Source>
+            </Image>
+
+            <Label Grid.Row="1"
+                   HorizontalTextAlignment="Center"
+                   Text="Información"
+                   TextColor="{StaticResource TextColor}"
+                   VerticalTextAlignment="Center"
+                   />
+
+
+
+        </Grid>
+        <!--#endregion-->
+
+        <!--#region Volumen-->
+             <Grid Grid.Row="1" Padding="15" Grid.Column="1"
+                 Background="{StaticResource AppColor2}"                 
+                 >
+
+                    <Grid.RowDefinitions>
+            <RowDefinition Height=".7*"/>
+            <RowDefinition Height=".3*"/>
+
+        </Grid.RowDefinitions>
+
+            <Image >
+                <Image.Source>
+                    <FontImageSource FontFamily="Icons"
+                                     Glyph="&#xF1B2;"
+                                     Size="50"/>
+                </Image.Source>
+            </Image>
+
+            <Label Grid.Row="1"
+                   HorizontalTextAlignment="Center"
+                   Text="Volumen"
+                   TextColor="{StaticResource TextColor}"
+                   VerticalTextAlignment="Center"
+                   />
+
+
+
+        </Grid>
+
+
+        <!--#endregion-->
+
+        <!--#region Length-->
+             <Grid Grid.Row="1" Padding="15" Grid.Column="2"
+                 Background="{StaticResource AppColor1}"                 
+                 >
+
+                    <Grid.RowDefinitions>
+            <RowDefinition Height=".7*"/>
+            <RowDefinition Height=".3*"/>
+
+        </Grid.RowDefinitions>
+
+            <Image >
+                <Image.Source>
+                    <FontImageSource FontFamily="Icons"
+                                     Glyph="&#xF1B2;"
+                                     Size="50"/>
+                </Image.Source>
+            </Image>
+
+            <Label Grid.Row="1"
+                   HorizontalTextAlignment="Center"
+                   Text="Largo"
+                   TextColor="{StaticResource TextColor}"
+                   VerticalTextAlignment="Center"
+                   />
+
+
+
+        </Grid>
+
+        <!--#endregion-->
+
+        <!--#region masa-->
+             <Grid Grid.Row="2" Padding="15" Grid.Column="0"
+                 Background="{StaticResource AppColor2}"                 
+                 >
+
+                    <Grid.RowDefinitions>
+            <RowDefinition Height=".7*"/>
+            <RowDefinition Height=".3*"/>
+
+        </Grid.RowDefinitions>
+
+            <Image >
+                <Image.Source>
+                    <FontImageSource FontFamily="Icons"
+                                     Glyph="&#xF1B2;"
+                                     Size="50"/>
+                </Image.Source>
+            </Image>
+
+            <Label Grid.Row="1"
+                   HorizontalTextAlignment="Center"
+                   Text="Masa"
+                   TextColor="{StaticResource TextColor}"
+                   VerticalTextAlignment="Center"
+                   />
+
+
+
+        </Grid>
+
+        <!--#endregion-->
+
+        <!--#region Temperatura-->
+             <Grid Grid.Row="2" Padding="15" Grid.Column="1"
+                 Background="{StaticResource AppColor2}"                 
+                 >
+
+                    <Grid.RowDefinitions>
+            <RowDefinition Height=".7*"/>
+            <RowDefinition Height=".3*"/>
+
+        </Grid.RowDefinitions>
+
+            <Image >
+                <Image.Source>
+                    <FontImageSource FontFamily="Icons"
+                                     Glyph="&#xF1B2;"
+                                     Size="50"/>
+                </Image.Source>
+            </Image>
+
+            <Label Grid.Row="1"
+                   HorizontalTextAlignment="Center"
+                   Text="Temperatura"
+                   TextColor="{StaticResource TextColor}"
+                   VerticalTextAlignment="Center"
+                   />
+
+
+
+        </Grid>
+
+        <!--#endregion-->
+
+
+
+        <!--#region Energia-->
+
+             <Grid Grid.Row="1" Padding="15" Grid.Column="2"
+                 Background="{StaticResource AppColor1}"                 
+                 >
+
+                    <Grid.RowDefinitions>
+            <RowDefinition Height=".7*"/>
+            <RowDefinition Height=".3*"/>
+
+        </Grid.RowDefinitions>
+
+            <Image >
+                <Image.Source>
+                    <FontImageSource FontFamily="Icons"
+                                     Glyph="&#xF1B2;"
+                                     Size="50"/>
+                </Image.Source>
+            </Image>
+
+            <Label Grid.Row="1"
+                   HorizontalTextAlignment="Center"
+                   Text="energia"
+                   TextColor="{StaticResource TextColor}"
+                   VerticalTextAlignment="Center"
+                   />
+
+
+
+        </Grid>
+
+        <!--#endregion-->
+
+
+
+        <!--#region area-->
+             <Grid Grid.Row="" Padding="15" Grid.Column="1"
+                 Background="{StaticResource AppColor2}"                 
+                 >
+
+                    <Grid.RowDefinitions>
+            <RowDefinition Height=".7*"/>
+            <RowDefinition Height=".3*"/>
+
+        </Grid.RowDefinitions>
+
+            <Image >
+                <Image.Source>
+                    <FontImageSource FontFamily="Icons"
+                                     Glyph="&#xF1B2;"
+                                     Size="50"/>
+                </Image.Source>
+            </Image>
+
+            <Label Grid.Row="1"
+                   HorizontalTextAlignment="Center"
+                   Text="Volumen"
+                   TextColor="{StaticResource TextColor}"
+                   VerticalTextAlignment="Center"
+                   />
+
+
+
+        </Grid>
+
+
+        <!--#endregion-->
+
+
+
+        <!--#region Informacion-->
+
+        <!--#endregion-->
+
+
+    </Grid>
+
+</ContentPage>
